@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { theme: { extend: { "colors": { "secondary-fixed-dim": "#ffb4a1", "on-primary-fixed-variant": "#881f00", "on-surface": "#111827", "surface-tint": "#af300b", "primary-fixed-dim": "#ffb4a1", "surface-container-highest": "#e5e7eb", "on-secondary-fixed-variant": "#881f00", "primary-fixed": "#ffdbd1", "surface-dim": "#f3f4f6", "surface-container": "#f8f9fa", "surface-variant": "#f1f3f5", "primary": "#c8421d", "inverse-on-surface": "#eff0f6", "on-tertiary": "#ffffff", "on-background": "#111827", "surface": "#ffffff", "on-primary": "#ffffff", "on-error-container": "#93000a", "on-primary-container": "#fff3f0", "on-tertiary-fixed": "#271904", "surface-container-low": "#fafafa", "surface-container-lowest": "#ffffff", "on-tertiary-fixed-variant": "#57432a", "outline-variant": "#e5e7eb", "inverse-surface": "#1f2937", "secondary": "#d9532f", "tertiary": "#836d50", "secondary-container": "#ff6e48", "on-tertiary-container": "#fff4eb", "error": "#ba1a1a", "tertiary-fixed-dim": "#dec2a1", "on-secondary-fixed": "#3c0800", "surface-bright": "#ffffff", "background": "#ffffff", "primary-container": "#c8421d", "on-secondary-container": "#651400", "inverse-primary": "#ffb4a1", "error-container": "#ffdad6", "surface-container-high": "#f3f4f6", "tertiary-container": "#836d50", "outline": "#6b7280", "on-primary-fixed": "#3c0800", "on-error": "#ffffff", "on-surface-variant": "#4b5563", "secondary-fixed": "#ffdbd1", "on-secondary": "#ffffff", "tertiary-fixed": "#fbdebb" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "3rem", "margin-desktop": "4rem", "margin": "1.25rem", "gutter": "1.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.75rem", "gutter-desktop": "2.5rem" }, "fontFamily": { "body-sm": [ "Plus Jakarta Sans" ], "headline-md": [ "Playfair Display" ], "display-lg": [ "Playfair Display" ], "label-md": [ "Plus Jakarta Sans" ], "headline-sm": [ "Playfair Display" ], "display-lg-mobile": [ "Playfair Display" ], "label-sm": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "headline-xl-mobile": [ "Playfair Display" ], "body-md": [ "Plus Jakarta Sans" ], "headline-xl": [ "Playfair Display" ] }, "fontSize": { "body-sm": [ "0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" } ], "headline-md": [ "1.75rem", { "lineHeight": "2.25rem", "fontWeight": "600" } ], "display-lg": [ "4.5rem", { "lineHeight": "5rem", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-md": [ "0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.04em", "fontWeight": "600" } ], "headline-sm": [ "1.25rem", { "lineHeight": "1.75rem", "fontWeight": "500" } ], "display-lg-mobile": [ "2.75rem", { "lineHeight": "3.25rem", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "label-sm": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.08em", "fontWeight": "600" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.875rem", "fontWeight": "400" } ], "headline-xl-mobile": [ "2rem", { "lineHeight": "2.5rem", "letterSpacing": "0em", "fontWeight": "600" } ], "body-md": [ "1rem", { "lineHeight": "1.625rem", "fontWeight": "400" } ], "headline-xl": [ "3rem", { "lineHeight": "3.5rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200/80 shadow-[0_2px_15px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin md:px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-3 group" data-path="home" href="#"><span class="relative flex items-center justify-center p-0.5 rounded-full ring-2 ring-primary/30 group-hover:ring-primary transition-all shadow-sm"><img alt="Banglami Photography Logo" class="w-12 h-12 md:w-14 md:h-14 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw1021oBTVXdBxn3EFjTmJUj5xqIw668eYgwJbUAyoYjbewkEdrYsq3i4jDrGspfwudX_f_kuoZMtvcYIqNBEw9G-o1lDj3xJ7KJgx_eWKFeoj_Gi7B7UqjUgeZZuoJoAQv1VNcv7JDhtkS3IYlY6x_L2DV-CEhkob5cQbMjKoK2IZ9WA0lbV7JPMHgj-XaxaVi8Hu_K63JPV2g-lOtSzKreShKwI23vOsYm82LQ3xLhE7C1y-cZmHmWTur8kQ7B1u"/></span><div class="flex flex-col"><span class="font-headline-sm text-lg md:text-headline-sm text-gray-900 font-semibold tracking-normal group-hover:text-primary transition-colors">Banglami Photography</span><span class="font-label-sm text-label-sm tracking-widest uppercase text-primary/80 font-semibold text-[10px] -mt-0.5">Artisan Cultural Studio</span></div></a></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary border-b-2 border-primary pb-1"><a aria-current="page" class="font-label-md transition-colors py-1 text-primary border-b-2 border-primary pb-1 font-semibold" data-path="home" href="#">Home</a><a class="font-label-md text-label-md text-gray-600 hover:text-primary transition-colors py-1 font-medium" data-path="stories-&amp;-portfolio" href="portfolio.html">Stories &amp; Portfolio</a><a class="font-label-md text-label-md text-gray-600 hover:text-primary transition-colors py-1 font-medium" data-path="about-artist" href="#">About Artist</a><a class="font-label-md text-label-md text-gray-600 hover:text-primary transition-colors py-1 font-medium" data-path="services-&amp;-packages" href="#">Services &amp; Packages</a><a class="font-label-md text-label-md text-gray-600 hover:text-primary transition-colors py-1 font-medium" data-path="client-love" href="#">Client Love</a></nav><div class="flex items-center gap-space-md"><a class="relative inline-flex items-center justify-center px-space-lg py-2.5 rounded-lg bg-primary text-white font-label-md text-label-md tracking-wider uppercase shadow-[0_2px_12px_rgba(200,66,29,0.25)] hover:bg-secondary hover:shadow-[0_4px_16px_rgba(200,66,29,0.35)] transition-all duration-300" data-path="book-a-session" href="#">Book a Session</a></div></div></header><main class="w-full pt-20 bg-white flex-1"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-white pb-space-xl pt-space-lg lg:pt-space-xl border-b border-gray-100">
+<!-- Atmospheric Ambient Glows -->
+<div class="pointer-events-none absolute -left-40 top-10 h-96 w-96 rounded-full bg-orange-100/40 blur-[130px]"></div>
+<div class="pointer-events-none absolute -right-32 top-1/3 h-[450px] w-[450px] rounded-full bg-amber-50/70 blur-[140px]"></div>
+<div class="mx-auto max-w-7xl px-margin md:px-gutter-desktop relative z-10">
+<!-- Top Eyebrow -->
+<div class="flex items-center gap-space-sm mb-space-sm">
+<span class="inline-block h-2 w-2 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Atelier of Cultural Frame &amp; Soul</span>
+<span class="text-gray-300 text-xs">/</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-gray-500">Kolkata • Worldwide</span>
+</div>
+<!-- Main Grid: Editorial Typography + Hero Showcase -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Text Column -->
+<div class="lg:col-span-5 flex flex-col justify-center z-10">
+<h1 class="font-headline-xl text-headline-xl text-gray-900 mb-space-md leading-tight">
+            Capturing the <span class="italic text-primary">Soul of Bengal</span> &amp; Beyond
+          </h1>
+<p class="font-body-lg text-body-lg text-gray-600 max-w-lg mb-space-lg leading-relaxed">
+            Candid weddings, cultural heritage, cinematic street stories, and soulful portraits captured through the rich Patachitra warmth and vibrant spirit of Banglami.
+          </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-space-md mb-space-xl">
+<a class="px-space-lg py-3 rounded-lg bg-primary text-white font-label-md text-label-md tracking-wider uppercase transition-all duration-300 hover:bg-secondary shadow-[0_4px_18px_rgba(200,66,29,0.25)] flex items-center gap-space-xs group" href="portfolio.html">
+<span>Explore Portfolio</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="px-space-lg py-3 rounded-lg bg-gray-50 border border-gray-200 text-gray-800 font-label-md text-label-md tracking-wider uppercase transition-all duration-300 hover:bg-gray-100 hover:border-gray-300 hover:text-primary flex items-center gap-space-xs" href="#consultation">
+<span class="material-symbols-outlined text-[18px] text-gray-600">calendar_today</span>
+<span>Book a Consultation</span>
+</a>
+</div>
+<!-- Micro Cultural Quote Motif -->
+<div class="p-space-md rounded-lg bg-[#fafafa] border-l-2 border-primary shadow-sm border border-gray-100">
+<p class="font-body-sm text-body-sm text-gray-600 italic">
+              "We frame not just light and posture, but the scent of marigolds, reverberations of the dhaak, and Kolkata's timeless soul."
+            </p>
+</div>
+</div>
+<!-- Visual Mosaic Showcase -->
+<div class="lg:col-span-7 relative">
+<div class="grid grid-cols-12 gap-space-sm sm:gap-space-md items-end">
+<!-- Main Vertical: Royal Bengali Bride -->
+<div class="col-span-7 relative group overflow-hidden rounded-xl shadow-lg border border-gray-200 bg-gray-100">
+<div class="aspect-[3/4] w-full overflow-hidden">
+<img alt="Bengali Bride in Banarasi Silk by Window" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1yamFr0Q-Mb-2M1DSPHJxTkmEsNcZ0flhe-jzk4pp5pOnjktycjQ7pGLjsy-C4PPpEmfmP2YWrDE1fp0MTJmNJviiPu5i4BERXTSYrHKgRUMlqxPnCbbskrYnbELA5MsFHq4rLtc4ao6ESe6LiaNV1kIKFXpqf3af5oy4PS2JmFXE8_kjkZs9ZQVVDq_G-LKONCIVCL20w3wsMSUB2y6qedEcwpeW_rzoOe0jUT6rwwfa2NS1jHg"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-gray-950/20 to-transparent opacity-85 group-hover:opacity-75 transition-opacity"></div>
+<div class="absolute bottom-0 left-0 right-0 p-space-md flex flex-col justify-end text-white">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-amber-300 mb-0.5">Wedding Editorial</span>
+<h3 class="font-headline-sm text-headline-sm text-white">The Rajbari Heirloom</h3>
+<span class="font-body-sm text-body-sm text-gray-300 text-xs mt-1">Sovabazar • Leica M11</span>
+</div>
+<div class="absolute top-space-sm right-space-sm bg-white/90 backdrop-blur-md px-2.5 py-1 rounded text-primary font-label-sm text-[11px] uppercase tracking-wider font-semibold shadow-sm">
+                Featured
+              </div>
+</div>
+<!-- Right Stack: Kolkata Street + Dhunuchi Celebration -->
+<div class="col-span-5 flex flex-col gap-space-sm sm:gap-space-md -mb-4 lg:-mb-6">
+<!-- Dhunuchi Dance -->
+<div class="relative group overflow-hidden rounded-xl shadow-md border border-gray-200 bg-gray-100">
+<div class="aspect-[4/3] w-full overflow-hidden">
+<img alt="Durga Puja Dhunuchi Dance with sparks and smoke" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsVcDOxND60ISIj50LNORkr63Zbf7eZVnzJGtKSlmzriMyzqlR22jP7YIuRLCMemckP2seamUtu2skWHIfjAK9JGhS0GbZDT0clqcyP3v0jFL3iSuqBMQHHR3YQjXK-jTTlmuK5EdRVp9P3B0Q4skBivi0uSidBjxHhW1lcLM92BNRGM04hoKXQt_stUWSzJhclUsUWBY4UMyPHC1nB-_UjQGfJNS4zEVib3cSp3z3WjVJo6qTRW4"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 right-0 p-space-sm text-white">
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-amber-300">Durga Puja • Smoke &amp; Embers</span>
+<p class="font-headline-sm text-sm text-white line-clamp-1">Devi Vandana Evening</p>
+</div>
+</div>
+<!-- Iconic Yellow Taxi -->
+<div class="relative group overflow-hidden rounded-xl shadow-md border border-gray-200 bg-gray-100">
+<div class="aspect-[4/3] w-full overflow-hidden">
+<img alt="Iconic Yellow Ambassador Taxi on College Street" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwSMP_Z0m1l_GHekvSRcVGOUTBDbsr34JClcYEAGIsc6GWrIIh2ujx0blUnsLMKAPAw_2SLV3AJWNdhPxXsnsUsBQZ8jJ2jWzBjpIISPwsp6e677dOHX9FeigToS_0XKjB4tle8oLSLMLeCpgAXCG9SXtd1TryxRR_CjMhQcvmE7B2Z4uCJmZDse33qpz_2wWX8zVwUCA-WXE3fi5Rk50TgMBlIuxT7AV5TqAq4bXA4hK9zbOoLCI"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 right-0 p-space-sm text-white">
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-amber-300">Streets of Calcutta</span>
+<p class="font-headline-sm text-sm text-white line-clamp-1">Ambassador 1974 Rhythm</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Trust Metrics Bar -->
+<div class="mt-space-xl pt-space-lg bg-gray-50 border border-gray-200/80 rounded-xl p-space-lg grid grid-cols-2 md:grid-cols-4 gap-space-lg items-center shadow-sm">
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary font-bold">12+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-gray-500 mt-1">Years Behind The Lens</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-secondary font-bold">350+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-gray-500 mt-1">Celebrated Stories</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-gray-800 font-bold">18</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-gray-500 mt-1">Editorial Honours</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-gray-900 font-semibold">Published In</span>
+<p class="font-body-sm text-body-sm text-gray-600 mt-1">Nat Geo Traveler • Vogue India • The Hindu</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ABOUT THE ARTIST & VISION -->
+<section class="w-full py-space-xl bg-[#fafafa] border-b border-gray-200/70 relative">
+<div class="mx-auto max-w-7xl px-margin md:px-gutter-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Circular Artist Emblem & Photo Badge -->
+<div class="lg:col-span-5 flex flex-col items-center sm:items-start text-center sm:text-left">
+<div class="relative inline-block mb-space-md">
+<div class="w-56 h-56 sm:w-64 sm:h-64 rounded-full overflow-hidden p-1.5 bg-gradient-to-tr from-primary via-amber-500 to-tertiary shadow-[0_4px_25px_rgba(200,66,29,0.15)] bg-white border border-gray-200">
+<img alt="Banglami Photography Rickshaw Art Logo Emblem" class="w-full h-full rounded-full object-cover bg-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw1021oBTVXdBxn3EFjTmJUj5xqIw668eYgwJbUAyoYjbewkEdrYsq3i4jDrGspfwudX_f_kuoZMtvcYIqNBEw9G-o1lDj3xJ7KJgx_eWKFeoj_Gi7B7UqjUgeZZuoJoAQv1VNcv7JDhtkS3IYlY6x_L2DV-CEhkob5cQbMjKoK2IZ9WA0lbV7JPMHgj-XaxaVi8Hu_K63JPV2g-lOtSzKreShKwI23vOsYm82LQ3xLhE7C1y-cZmHmWTur8kQ7B1u"/>
+</div>
+<!-- Handcrafted Badge Overlap -->
+<div class="absolute -bottom-2 right-2 bg-white px-space-md py-1.5 rounded-full shadow-md border border-gray-200 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="font-label-sm text-label-sm text-gray-900 uppercase tracking-wider font-semibold">Master Visualist</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md mt-space-xs text-gray-500">
+<span class="font-label-sm text-label-sm tracking-widest uppercase font-semibold">Kolkata Native</span>
+<span>•</span>
+<span class="font-label-sm text-label-sm tracking-widest uppercase font-semibold">Patachitra Collector</span>
+</div>
+</div>
+<!-- Vision Narrative -->
+<div class="lg:col-span-7 flex flex-col">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md uppercase tracking-widest mb-space-xs font-semibold">
+<span class="material-symbols-outlined text-[18px]">auto_stories</span>
+<span>The Chronicler's Philosophy</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-gray-900 mb-space-md">
+            Ananya Sen • <span class="font-headline-sm text-primary font-normal">Banglami</span>
+</h2>
+<p class="font-body-lg text-body-lg text-gray-700 leading-relaxed mb-space-md">
+            Banglami was conceived out of an obsessive love for Bengal's tactile spirit—the vivid palette of Dhaka's rickshaw paintings, Kalighat patachitra strokes, and the cinematic mist of dawn across the Hooghly. 
+          </p>
+<p class="font-body-md text-body-md text-gray-600 leading-relaxed mb-space-lg">
+            We reject clinical, overly-orchestrated documentation. Instead, our lens catches real cadence: the tear rolling past sandalwood bridal art, the burst of resin incense during Sandhi Puja, and the quiet dignity of old North Kolkata verandahs. Every frame is graded with archival tones that honor memory.
+          </p>
+<!-- Core Tenets Mosaic -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<div class="p-space-md rounded-xl bg-white border border-gray-200/80 shadow-sm">
+<span class="material-symbols-outlined text-primary mb-space-xs">palette</span>
+<h4 class="font-label-md text-label-md text-gray-900 mb-1 font-semibold">Authentic Chromas</h4>
+<p class="font-body-sm text-body-sm text-gray-500">Saffron, vermillion, and vintage moss hues preserved faithfully.</p>
+</div>
+<div class="p-space-md rounded-xl bg-white border border-gray-200/80 shadow-sm">
+<span class="material-symbols-outlined text-secondary mb-space-xs">eye_tracking</span>
+<h4 class="font-label-md text-label-md text-gray-900 mb-1 font-semibold">Pure Candidness</h4>
+<p class="font-body-sm text-body-sm text-gray-500">Unobtrusive presence that lets intimate family history breathe.</p>
+</div>
+<div class="p-space-md rounded-xl bg-white border border-gray-200/80 shadow-sm">
+<span class="material-symbols-outlined text-tertiary mb-space-xs">history_edu</span>
+<h4 class="font-label-md text-label-md text-gray-900 mb-1 font-semibold">Heirloom Curation</h4>
+<p class="font-body-sm text-body-sm text-gray-500">Fine art prints bound in Bengal handloom weaves for generations.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CURATED WORK / PORTFOLIO PREVIEW -->
+<section class="w-full py-space-xl bg-white relative border-b border-gray-100" id="portfolio">
+<div class="mx-auto max-w-7xl px-margin md:px-gutter-desktop">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary block mb-space-xs font-semibold">Curated Folios</span>
+<h2 class="font-headline-xl text-headline-xl text-gray-900">Living Tapestries of Bengal</h2>
+</div>
+<p class="font-body-sm text-body-sm text-gray-500 max-w-md">
+          A revolving visual anthology covering sacred weddings, street histories, and cultural festivals across Eastern India.
+        </p>
+</div>
+<!-- Category Filter Tabs -->
+<div class="flex items-center gap-space-xs sm:gap-space-sm overflow-x-auto pb-space-sm mb-space-xl no-scrollbar" id="portfolio-tabs">
+<button class="portfolio-tab px-space-md py-2 rounded-full font-label-sm text-label-sm tracking-wider uppercase bg-primary text-white shadow-sm transition-all whitespace-nowrap font-medium" data-category="all">
+          All Works (28)
+        </button>
+<button class="portfolio-tab px-space-md py-2 rounded-full font-label-sm text-label-sm tracking-wider uppercase bg-gray-100 border border-gray-200 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-all whitespace-nowrap font-medium" data-category="weddings">
+          Royal Bengali Weddings
+        </button>
+<button class="portfolio-tab px-space-md py-2 rounded-full font-label-sm text-label-sm tracking-wider uppercase bg-gray-100 border border-gray-200 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-all whitespace-nowrap font-medium" data-category="streets">
+          Streets of Calcutta
+        </button>
+<button class="portfolio-tab px-space-md py-2 rounded-full font-label-sm text-label-sm tracking-wider uppercase bg-gray-100 border border-gray-200 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-all whitespace-nowrap font-medium" data-category="festivals">
+          Durga Puja &amp; Festivals
+        </button>
+<button class="portfolio-tab px-space-md py-2 rounded-full font-label-sm text-label-sm tracking-wider uppercase bg-gray-100 border border-gray-200 text-gray-700 hover:text-gray-900 hover:bg-gray-200 transition-all whitespace-nowrap font-medium" data-category="portraits">
+          Artistic Portraits
+        </button>
+</div>
+<!-- Portfolio Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Card 1: Bengali Bride -->
+<div class="group flex flex-col bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+<div class="relative aspect-[4/5] w-full overflow-hidden bg-gray-100">
+<img alt="Bengali Bride Heirloom Wedding Photography" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1yamFr0Q-Mb-2M1DSPHJxTkmEsNcZ0flhe-jzk4pp5pOnjktycjQ7pGLjsy-C4PPpEmfmP2YWrDE1fp0MTJmNJviiPu5i4BERXTSYrHKgRUMlqxPnCbbskrYnbELA5MsFHq4rLtc4ao6ESe6LiaNV1kIKFXpqf3af5oy4PS2JmFXE8_kjkZs9ZQVVDq_G-LKONCIVCL20w3wsMSUB2y6qedEcwpeW_rzoOe0jUT6rwwfa2NS1jHg"/>
+<div class="absolute top-space-sm left-space-sm">
+<span class="px-2.5 py-1 rounded bg-white/90 backdrop-blur-md text-primary font-label-sm text-[11px] uppercase tracking-wider font-semibold shadow-sm">Wedding Chronicle</span>
+</div>
+<div class="absolute bottom-space-sm right-space-sm opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="inline-flex p-2 rounded-full bg-primary text-white shadow-md">
+<span class="material-symbols-outlined text-[20px]">fullscreen</span>
+</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between bg-white">
+<div>
+<div class="flex items-center justify-between text-gray-500 font-label-sm text-[11px] mb-1">
+<span>Sovabazar Rajbari • Kolkata</span>
+<span class="text-primary font-medium">Kodak Portra Warm</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-gray-900 mb-space-xs group-hover:text-primary transition-colors">
+                The Crimson Banarasi &amp; Alta Ritual
+              </h3>
+<p class="font-body-sm text-body-sm text-gray-600 line-clamp-2">
+                A sanctuary portrait capturing the bride amidst natural morning timber-paneled light, featuring hand-crafted gold choker and forehead chandan ornamentation.
+              </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-gray-100 flex items-center justify-between">
+<span class="font-label-sm text-[11px] text-gray-400">Leica M11 • 35mm f/1.4</span>
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-primary hover:text-secondary font-semibold transition-colors flex items-center gap-1" href="#consultation">
+<span>View Story</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Card 2: Calcutta Street & Yellow Taxi -->
+<div class="group flex flex-col bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+<div class="relative aspect-[4/5] w-full overflow-hidden bg-gray-100">
+<img alt="Yellow Ambassador Taxi on Old Kolkata College Street" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwSMP_Z0m1l_GHekvSRcVGOUTBDbsr34JClcYEAGIsc6GWrIIh2ujx0blUnsLMKAPAw_2SLV3AJWNdhPxXsnsUsBQZ8jJ2jWzBjpIISPwsp6e677dOHX9FeigToS_0XKjB4tle8oLSLMLeCpgAXCG9SXtd1TryxRR_CjMhQcvmE7B2Z4uCJmZDse33qpz_2wWX8zVwUCA-WXE3fi5Rk50TgMBlIuxT7AV5TqAq4bXA4hK9zbOoLCI"/>
+<div class="absolute top-space-sm left-space-sm">
+<span class="px-2.5 py-1 rounded bg-white/90 backdrop-blur-md text-amber-700 font-label-sm text-[11px] uppercase tracking-wider font-semibold shadow-sm">Street Heritage</span>
+</div>
+<div class="absolute bottom-space-sm right-space-sm opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="inline-flex p-2 rounded-full bg-secondary text-white shadow-md">
+<span class="material-symbols-outlined text-[20px]">fullscreen</span>
+</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between bg-white">
+<div>
+<div class="flex items-center justify-between text-gray-500 font-label-sm text-[11px] mb-1">
+<span>College Street Arcade • Kolkata</span>
+<span class="text-amber-600 font-medium">Golden Dust Tone</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-gray-900 mb-space-xs group-hover:text-primary transition-colors">
+                The Yellow Ambassador at Noon
+              </h3>
+<p class="font-body-sm text-body-sm text-gray-600 line-clamp-2">
+                Documenting the bustling streetscape, painted shopfront signages, and hand-pulled rickshaws framed along the iconic heritage avenue.
+              </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-gray-100 flex items-center justify-between">
+<span class="font-label-sm text-[11px] text-gray-400">Fujifilm GFX 100S • 45mm</span>
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-primary hover:text-secondary font-semibold transition-colors flex items-center gap-1" href="#consultation">
+<span>View Story</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Card 3: Durga Puja Dhunuchi Dance -->
+<div class="group flex flex-col bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+<div class="relative aspect-[4/5] w-full overflow-hidden bg-gray-100">
+<img alt="Devotee performing Dhunuchi Dance during Durga Puja" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsVcDOxND60ISIj50LNORkr63Zbf7eZVnzJGtKSlmzriMyzqlR22jP7YIuRLCMemckP2seamUtu2skWHIfjAK9JGhS0GbZDT0clqcyP3v0jFL3iSuqBMQHHR3YQjXK-jTTlmuK5EdRVp9P3B0Q4skBivi0uSidBjxHhW1lcLM92BNRGM04hoKXQt_stUWSzJhclUsUWBY4UMyPHC1nB-_UjQGfJNS4zEVib3cSp3z3WjVJo6qTRW4"/>
+<div class="absolute top-space-sm left-space-sm">
+<span class="px-2.5 py-1 rounded bg-white/90 backdrop-blur-md text-primary font-label-sm text-[11px] uppercase tracking-wider font-semibold shadow-sm">Festival Memoir</span>
+</div>
+<div class="absolute bottom-space-sm right-space-sm opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="inline-flex p-2 rounded-full bg-primary text-white shadow-md">
+<span class="material-symbols-outlined text-[20px]">fullscreen</span>
+</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between bg-white">
+<div>
+<div class="flex items-center justify-between text-gray-500 font-label-sm text-[11px] mb-1">
+<span>Bagbazar Sarbojanin • Kolkata</span>
+<span class="text-primary font-medium">Ember Grain</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-gray-900 mb-space-xs group-hover:text-primary transition-colors">
+                The Dhaak &amp; Incense Ecstasy
+              </h3>
+<p class="font-body-sm text-body-sm text-gray-600 line-clamp-2">
+                A mesmerizing shutter speed study freezing clay fire pots, dancing sparks, and clapping devotees beneath the grand Pratima of Goddess Durga.
+              </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-gray-100 flex items-center justify-between">
+<span class="font-label-sm text-[11px] text-gray-400">Sony A1 • 24-70mm GM II</span>
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-primary hover:text-secondary font-semibold transition-colors flex items-center gap-1" href="#consultation">
+<span>View Story</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TESTIMONIAL FEATURE -->
+<section class="w-full py-space-lg bg-[#fafafa] border-b border-gray-200/70">
+<div class="mx-auto max-w-5xl px-margin md:px-gutter-desktop">
+<div class="p-space-lg md:p-space-xl rounded-xl bg-white border border-gray-200 shadow-sm relative overflow-hidden">
+<div class="flex items-center gap-1 text-amber-500 mb-space-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm text-gray-500 ml-2 font-medium">5.0 Star Client Memoir</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-gray-900 italic leading-relaxed mb-space-md">
+          "Banglami gave us memories that look like stills from an art film. Ananya didn't ask us to freeze fake poses for hours—she captured the warmth of our grandmother's laughter during the Gaye Holud and the raw emotion of the Sindoor Daan. Looking at our album is pure poetry."
+        </p>
+<div class="flex items-center justify-between flex-wrap gap-space-sm pt-space-xs border-t border-gray-100">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-semibold">Debolina &amp; Sayan Mukherjee</span>
+<span class="font-body-sm text-body-sm text-gray-500">Bari Wedding • Burdwan Rajbari &amp; Kolkata</span>
+</div>
+<div class="flex items-center gap-2 text-gray-700">
+<span class="material-symbols-outlined text-primary text-[18px]">photo_album</span>
+<span class="font-label-sm text-label-sm text-gray-600 uppercase tracking-wider font-medium">Velvet Khadi Bound Volume</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- COMPREHENSIVE CONTACT & BOOKING INQUIRIES SECTION -->
+<section class="w-full py-space-xl bg-white relative" id="consultation">
+<div class="mx-auto max-w-7xl px-margin md:px-gutter-desktop">
+<!-- Section Header -->
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary block mb-space-xs font-semibold">Reserve Your Story</span>
+<h2 class="font-headline-xl text-headline-xl text-gray-900 mb-space-xs">Commission an Experience</h2>
+<p class="font-body-md text-body-md text-gray-600">
+          We take a curated number of 18 weddings and select commercial chronicles each calendar season. Tell us about your date and celebration.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- Contact Information & Quick Actions Card -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Main Studio Card -->
+<div class="p-space-lg rounded-xl bg-white border border-gray-200 shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm pb-space-sm border-b border-gray-100">
+<span class="p-2.5 rounded-lg bg-orange-50 text-primary material-symbols-outlined border border-orange-100">apartment</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-gray-900">Studio Kolkata</h3>
+<span class="font-label-sm text-label-sm text-gray-500">Visual Atelier &amp; Darkroom Lounge</span>
+</div>
+</div>
+<!-- Detail List -->
+<div class="flex flex-col gap-space-md text-body-sm">
+<!-- Physical Address -->
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary mt-0.5 text-[20px]">location_on</span>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-gray-500 font-semibold block">Physical Studio Address</span>
+<p class="text-gray-800 mt-0.5 leading-relaxed">
+                    14/2B Southern Avenue, Ballygunge,<br/>
+                    Kolkata, West Bengal 700029, India
+                  </p>
+</div>
+</div>
+<!-- Phone & WhatsApp -->
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary mt-0.5 text-[20px]">call</span>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-gray-500 font-semibold block">Studio Phone &amp; Concierge</span>
+<a class="text-primary font-semibold hover:underline block mt-0.5" href="tel:+919830124589">+91 98301 24589</a>
+<span class="text-xs text-gray-400">Direct lines open 10:00 AM – 7:30 PM IST</span>
+</div>
+</div>
+<!-- Email Addresses -->
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary mt-0.5 text-[20px]">mail</span>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-gray-500 font-semibold block">Electronic Enquiries</span>
+<a class="text-primary font-medium hover:underline block mt-0.5" href="mailto:hello@banglamiphotography.com">hello@banglamiphotography.com</a>
+<a class="text-gray-500 text-xs hover:underline block" href="mailto:bookings@banglamiphotography.com">bookings@banglamiphotography.com</a>
+</div>
+</div>
+<!-- Hours -->
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary mt-0.5 text-[20px]">schedule</span>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-gray-500 font-semibold block">Studio Hours</span>
+<p class="text-gray-800 mt-0.5">
+                    Tuesday – Sunday: 10:00 AM – 7:30 PM<br/>
+<span class="text-primary font-medium text-xs">Exclusively By Prior Appointment</span>
+</p>
+</div>
+</div>
+</div>
+<!-- Quick Action Links -->
+<div class="pt-space-md border-t border-gray-100 flex flex-col gap-space-xs">
+<a class="w-full py-2.5 px-space-md rounded-lg bg-gray-50 hover:bg-gray-100 border border-gray-200 text-gray-800 flex items-center justify-between font-label-sm text-label-sm uppercase tracking-wider transition-colors" href="https://wa.me/919830124589" target="_blank">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-emerald-600">chat</span>
+<span class="font-medium">Instant Chat on WhatsApp</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-gray-400">arrow_outward</span>
+</a>
+<a class="w-full py-2.5 px-space-md rounded-lg bg-gray-50 hover:bg-gray-100 border border-gray-200 text-gray-800 flex items-center justify-between font-label-sm text-label-sm uppercase tracking-wider transition-colors" href="#booking-form">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">event_available</span>
+<span class="font-medium">Schedule a Studio Chai &amp; Visit</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-gray-400">arrow_forward</span>
+</a>
+<button class="w-full py-2.5 px-space-md rounded-lg bg-gray-50 hover:bg-gray-100 border border-gray-200 text-gray-800 flex items-center justify-between font-label-sm text-label-sm uppercase tracking-wider transition-colors">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">download</span>
+<span class="font-medium">Download 2025 Pricing &amp; Story Guide</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-gray-400">picture_as_pdf</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Booking Inquiry Form -->
+<div class="lg:col-span-7">
+<div class="p-space-lg md:p-space-xl rounded-xl bg-white border border-gray-200 shadow-sm">
+<h3 class="font-headline-md text-headline-md text-gray-900 mb-1">Tell Us Your Narrative</h3>
+<p class="font-body-sm text-body-sm text-gray-600 mb-space-lg">
+              Fill out the details below. We reply with a customized investment deck and date availability within 24 hours.
+            </p>
+<form class="space-y-space-md" id="booking-form" onsubmit="event.preventDefault(); document.getElementById('form-feedback').classList.remove('hidden'); this.reset();">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Name -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-gray-700 font-semibold" for="full-name">Your Full Name *</label>
+<input class="w-full px-space-md py-3 rounded-lg bg-white border border-gray-300 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary font-body-sm" id="full-name" placeholder="e.g. Joyita Bannerjee" required="" type="text"/>
+</div>
+<!-- Email -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-gray-700 font-semibold" for="email">Email Address *</label>
+<input class="w-full px-space-md py-3 rounded-lg bg-white border border-gray-300 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary font-body-sm" id="email" placeholder="joyita@example.com" required="" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Phone -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-gray-700 font-semibold" for="phone">Phone / WhatsApp *</label>
+<input class="w-full px-space-md py-3 rounded-lg bg-white border border-gray-300 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary font-body-sm" id="phone" placeholder="+91 98300 00000" required="" type="tel"/>
+</div>
+<!-- Shoot Type -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-gray-700 font-semibold" for="shoot-type">Commission Category *</label>
+<select class="w-full px-space-md py-3 rounded-lg bg-white border border-gray-300 text-gray-900 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary font-body-sm" id="shoot-type">
+<option value="wedding">Royal Bengali Wedding (Multi-Day)</option>
+<option value="pre-wedding">Intimate Pre-Wedding &amp; Couple Chronicle</option>
+<option value="street-workshop">Calcutta Street Photography Masterclass</option>
+<option value="festival">Durga Puja / Cultural Documentation</option>
+<option value="portrait">Artisan &amp; Heritage Editorial Portrait</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Preferred Date -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-gray-700 font-semibold" for="event-date">Expected Date / Season</label>
+<input class="w-full px-space-md py-3 rounded-lg bg-white border border-gray-300 text-gray-900 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary font-body-sm" id="event-date" type="date"/>
+</div>
+<!-- City / Venue -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-gray-700 font-semibold" for="location">City • Venue / Rajbari</label>
+<input class="w-full px-space-md py-3 rounded-lg bg-white border border-gray-300 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary font-body-sm" id="location" placeholder="e.g. Raichak / Bawali Rajbari" type="text"/>
+</div>
+</div>
+<!-- Vision Notes -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-gray-700 font-semibold" for="notes">Tell Us About Your Vision &amp; Ceremonies</label>
+<textarea class="w-full px-space-md py-3 rounded-lg bg-white border border-gray-300 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary font-body-sm resize-none" id="notes" placeholder="Mention key ceremonies (Aashirbaad, Gaye Holud, Sindoor Daan), family heirlooms, or aesthetic preferences..." rows="4"></textarea>
+</div>
+<!-- Submit Button -->
+<button class="w-full py-3.5 rounded-lg bg-primary text-white font-label-md text-label-md tracking-widest uppercase hover:bg-secondary transition-all duration-300 shadow-[0_4px_16px_rgba(200,66,29,0.25)] flex items-center justify-center gap-space-xs font-semibold" type="submit">
+<span>Dispatch Inquiry to Banglami Studio</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+<!-- Feedback Confirmation Message -->
+<div class="hidden p-space-md rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-800 flex items-center gap-2" id="form-feedback">
+<span class="material-symbols-outlined text-[20px] text-emerald-600">check_circle</span>
+<span class="font-body-sm text-body-sm">Dhanyabaad! Your inquiry has been delivered directly to Ananya's desk. Expect our portfolio kit within 24 hours.</span>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Quick Grid Accordion -->
+<section class="w-full py-space-xl bg-[#fafafa] border-t border-gray-200/70">
+<div class="mx-auto max-w-5xl px-margin md:px-gutter-desktop">
+<div class="text-center mb-space-lg">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary block mb-space-xs font-semibold">Common Inquiries</span>
+<h3 class="font-headline-md text-headline-md text-gray-900">Frequently Asked Questions</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="p-space-md rounded-xl bg-white border border-gray-200/80 shadow-sm">
+<h4 class="font-label-md text-label-md text-primary mb-1 font-semibold">Do you travel outside Kolkata?</h4>
+<p class="font-body-sm text-body-sm text-gray-600">Yes. More than 40% of our commissions take place in Santiniketan, Darjeeling, Murshidabad, Delhi, and destination heritage venues abroad.</p>
+</div>
+<div class="p-space-md rounded-xl bg-white border border-gray-200/80 shadow-sm">
+<h4 class="font-label-md text-label-md text-primary mb-1 font-semibold">How soon do we receive the full heirloom gallery?</h4>
+<p class="font-body-sm text-body-sm text-gray-600">A 40-image sneak peek arrives within 72 hours of your wedding. Your final color-graded high-resolution gallery is delivered within 4–6 weeks.</p>
+</div>
+<div class="p-space-md rounded-xl bg-white border border-gray-200/80 shadow-sm">
+<h4 class="font-label-md text-label-md text-primary mb-1 font-semibold">Can we arrange physical album viewings at the studio?</h4>
+<p class="font-body-sm text-body-sm text-gray-600">Absolutely. We invite you to our Southern Avenue studio to hold our artisanal handloom-bound photobooks over freshly brewed Darjeeling first-flush tea.</p>
+</div>
+<div class="p-space-md rounded-xl bg-white border border-gray-200/80 shadow-sm">
+<h4 class="font-label-md text-label-md text-primary mb-1 font-semibold">Do you also provide cinematic wedding films?</h4>
+<p class="font-body-sm text-body-sm text-gray-600">Yes, our bespoke film team uses cinematic 4K Super 35 cameras, focusing on analog audio textures, shehnai notes, and documentary-style storytelling.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple interactive tab behavior for the portfolio
+  document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.portfolio-tab');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => {
+          t.classList.remove('bg-primary', 'text-white', 'shadow-sm');
+          t.classList.add('bg-gray-100', 'border', 'border-gray-200', 'text-gray-700');
+        });
+        tab.classList.add('bg-primary', 'text-white', 'shadow-sm');
+        tab.classList.remove('bg-gray-100', 'border', 'border-gray-200', 'text-gray-700');
+      });
+    });
+  });
+</script>
+<style>#pg-overlay{position:fixed;inset:0;background:#fff;opacity:0;pointer-events:none;transition:opacity 0.5s cubic-bezier(0.4,0,0.2,1);z-index:9999}#pg-overlay.active{opacity:1}</style>
+<div id="pg-overlay"></div>
+<script>document.querySelectorAll('a[href="portfolio.html"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();var href=this.href;document.getElementById('pg-overlay').classList.add('active');setTimeout(function(){window.top.location.href=href;},500);});});</script>
+</main><footer class="w-full bg-white border-t border-gray-200 text-gray-600"><div class="max-w-7xl mx-auto px-margin md:px-gutter-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-desktop items-start mb-space-xl"><div class="md:col-span-5 flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="Banglami Photography Logo" class="w-10 h-10 rounded-full object-cover ring-1 ring-primary/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw1021oBTVXdBxn3EFjTmJUj5xqIw668eYgwJbUAyoYjbewkEdrYsq3i4jDrGspfwudX_f_kuoZMtvcYIqNBEw9G-o1lDj3xJ7KJgx_eWKFeoj_Gi7B7UqjUgeZZuoJoAQv1VNcv7JDhtkS3IYlY6x_L2DV-CEhkob5cQbMjKoK2IZ9WA0lbV7JPMHgj-XaxaVi8Hu_K63JPV2g-lOtSzKreShKwI23vOsYm82LQ3xLhE7C1y-cZmHmWTur8kQ7B1u"/><span class="font-headline-md text-headline-md text-gray-900 font-semibold">Banglami Photography</span></div><p class="font-body-sm text-body-sm text-gray-500 max-w-sm mt-space-xs leading-relaxed">An avant-garde photographic atelier honoring Bengali heritage, rickshaw art motifs, and high editorial story-craft from the heart of Kolkata.</p></div><div class="md:col-span-4 flex flex-col gap-space-xs"><span class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold">Studio Kolkata</span><p class="font-body-sm text-body-sm text-gray-600 leading-relaxed">24/1 Ballygunge Circular Road,<br/>Kolkata, West Bengal 700019<br/><span class="text-gray-400">By Appointment &amp; Visual Commissions</span></p></div><div class="md:col-span-3 flex flex-col gap-space-sm"><span class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold">Connect</span><div class="flex flex-wrap gap-space-md items-center"><a class="flex items-center gap-1.5 font-label-sm text-label-sm text-gray-600 hover:text-primary transition-colors" href="#" title="Instagram"><span class="material-symbols-outlined text-[18px]">photo_camera</span><span>Instagram</span></a><a class="flex items-center gap-1.5 font-label-sm text-label-sm text-gray-600 hover:text-primary transition-colors" href="#" title="500px Portfolio"><span class="material-symbols-outlined text-[18px]">gallery_thumbnail</span><span>500px</span></a><a class="flex items-center gap-1.5 font-label-sm text-label-sm text-gray-600 hover:text-primary transition-colors" href="#" title="YouTube Stories"><span class="material-symbols-outlined text-[18px]">smart_display</span><span>YouTube</span></a><a class="flex items-center gap-1.5 font-label-sm text-label-sm text-gray-600 hover:text-primary transition-colors" href="#" title="WhatsApp Concierge"><span class="material-symbols-outlined text-[18px]">chat</span><span>WhatsApp</span></a></div></div></div><div class="pt-space-md border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-gray-400"><p>© 2024 Banglami Photography. All rights reserved.</p><p class="text-right">Calcutta • Patachitra Aesthetic • Editorial Frame</p></div></div></footer></body></html>
